@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Countdown to the Carnival</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+      <script type="text/javascript" src="/js/mdb.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>
+        <!--Main Navigation-->
+    <header>
+      <style>
+        @media (min-width: 992px) {
+          #introCarousel {
+            margin-top: -58.59px;
+          }
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 50vh;
+          }
+        }
+
+        .navbar .nav-link {
+          color: #fff !important;
+        }
+
+        * {
+    box-sizing: border-box;
+        }
+        
+        /* body */
+        body {
+          font-family: Arial;
+          margin: 0;
+        }
+        
+        /* Header */
+        .header {
+          padding: 60px;
+          text-align: center;
+          background: #e5b1b1;
+          color: white;
+        }
+        
+        /* top nav bar */
+        .navbar {
+          list-style-type: none;
+          display: flex;
+          background-color: #333;
+          text-align: center;
+          text-decoration: none;
+        }
+        
+        /* nav bar links */
+        .navbar a {
+          list-style-type: none;
+          color: white;
+          padding: 14px 20px;
+          text-decoration: none;
+          text-align: center;
+        }
+        
+        /* hover */
+        .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+          opacity: 0.7;
+        }
+
+        .row {  
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .side {
+          flex: 30%;
+          background-color: #f1f1f1;
+          padding: 20px;
+        }
+        
+        .main {
+          flex: 70%;
+          background-color: white;
+          padding: 20px;
+        }
+
+        .img {
+          background-color: #aaa;
+          width: 100%;
+          padding: 20px;
+        }
+        
+        .box {
+          background-color: #e5b1b1;
+          width: 100%;
+          padding: 20px;
+        }
+        
+        .footer {
+          padding: 20px;
+          text-align: center;
+          background: #ddd;
+        }
+
+        @media screen and (max-width: 700px) {
+          .row, .navbar {   
+            flex-direction: column;
+          }
+        }
+
+
+        /* dropdown nav menu & submenu style */
+        nav ul li{
+          list-style-type: none;
+          display: inline-block;
+          background-color: #333;
+          text-align: center;
+          padding: 0.3rem 0 0 0.1rem;
+          }
+        nav ul li:last-child{
+          margin-right: 0;
+          background-color: #333;
+          }
+        nav ul li a{
+          color: #333;
+          display: inline-block;
+          transition: all ease 0.3s;
+          background-color: #333;
+          list-style-type: none;
+          color: white;
+          padding: 0.3rem 0 0 0.1rem;
+          text-decoration: none;
+          text-align: center;
+          }
+        nav ul li a:hover{
+          color: #333;
+          background-color: #333;
+          }
+        nav ul .submenu{
+          list-style-type: none;
+          position: absolute;
+          width: 200px; 
+          box-shadow: 0 20px 45px #00000020;
+          margin-top: center;
+          margin-bottom: center;
+          opacity: 0;
+          transition: all ease 0.5s;
+          background-color: #333;
+          }
+        nav ul li:hover .submenu{
+          opacity: 1;
+          margin-top: 0;
+          background-color: #333;
+          text-align: left;
+          }
+        nav ul .submenu li{
+          margin: 0;
+          width: 100%;
+          background-color: #333;
+          text-align: left;
+          } 
+        nav ul .submenu li a{
+          display: inline-block;
+          width: 100%;
+          background-color: #333;
+          text-align: left;
+          }
+</style>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 2000;">
+    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><strong>Home</strong></a>
+      <ul>
+        <li><a class="nav navbar" style="padding: 15px 0 0 5px;" href="#">Plan Your Regatta Week</a>
+            <ul class="submenu">
+                <li><a class="nav" href="./newsletter.html">Newsletter</a></li>
+                <li><a class="nav" href="./Countdown.html">Countdown to the Carnival</a></li>
+                <li><a class="nav" href="./gallery.html">Gallery of Previous Carnivals</a></li>
+                <li><a class="nav" href="./resources.html">Other Handy Links</a></li>
+            </ul>
+        </li>
+      </ul>
+      <a class="nav" href="https://www.facebook.com/groups/dealcarnivalnews/posts/3646385962325719/?_rdr"><i class="fa fa-facebook"></i></a>
+      <a class="nav" href="https://www.dealcarnival.org/"><i class="fa fa-globe"></i></a>    
+    </div>
+  </nav>
+</header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5">
+      <div class="container">
+        <body>
+          <div class="bgimg">
+              <div class="hr">
+                <h1><center>Countdown to the Carnival</center></h1>
+                <hr>
+                <center><p id="demo"></p></center>
+                <hr>
+                <p><center>Regatta Week 2025</center></p>
+              </div>
+          </div>
+        </body>
+      </div>
+        <!--Section: Content-->
+
+        <hr class="my-5" />
+
+
+        <section class="mb-5">
+          <!-- Submit button -->
+          <a button type="submit" class="btn btn-primary btn-block mb-4" data-mdb-ripple-init href="./newsletter.html">
+            Sign up to the newsletter
+          </a></a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--Section: Content-->
+</div>
+</main>
+<!--Main layout-->
+
+<!--Check out last year's events - https://www.walmercouncil.co.uk/_UserFiles/Files/Summer%2024%20On%20The%20Green%20Poster.pdf -->
+
+    <!--Footer-->
+    <footer class="bg-light text-lg-start">
+      <hr class="m-0" />
+
+      <div class="text-center py-4 align-items-center">
+        <a href="#top" title="Scroll to top" id="scroll-top-link" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" class=""><span class="avia_hidden_link_text">Scroll to top</span></a>  
+        </a>
+      </div>
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright:
+        <a class="text-dark">Charlotte - Powered by </a><a href="https://codefirstgirls.com/">Code First Girls</a><a> training.</a>
+      </div>
+    </footer>
+    <!--Footer-->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+</body>
+</html>
